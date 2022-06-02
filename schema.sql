@@ -3,7 +3,7 @@ CREATE TABLE lists (
   "name" text UNIQUE NOT NULL
 );
 
-CREATE TABLE todo (
+CREATE TABLE todos (
   id serial PRIMARY KEY,
   list_id integer NOT NULL REFERENCES lists(id),
   "name" text NOT NULL,
